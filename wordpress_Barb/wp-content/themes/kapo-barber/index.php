@@ -45,7 +45,7 @@
     </div>
     <!-- slider Area End-->
     <!--? About Area Start -->
-    <section class="about-area section-padding30 position-relative">
+    <section id="about" class="about-area section-padding30 position-relative">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-11">
@@ -75,7 +75,7 @@
     </section>
     <!-- About-2 Area End -->
     <!--? Services Area Start -->
-    <section class="service-area pb-170">
+    <section id="services" class="service-area pb-170">
         <div class="container">
             <!-- Section Tittle -->
             <div class="row d-flex justify-content-center">
@@ -235,7 +235,7 @@
     </div>
     <!-- Best Pricing Area End -->
     <!--? Gallery Area Start -->
-    <div class="gallery-area section-padding30">
+    <div id="portfolio" class="gallery-area section-padding30">
         <div class="container">
             <!-- Section Tittle -->
             <div class="row justify-content-center">
@@ -317,7 +317,7 @@
     </div>
     <!-- Cut Details End -->
     <!--? Blog Area Start -->
-    <section class="home-blog-area section-padding30">
+    <section id="blog" class="home-blog-area section-padding30">
         <div class="container">
             <!-- Section Tittle -->
             <div class="row justify-content-center">

@@ -54,24 +54,24 @@
                                         function kapo_barber_menu_fallback() {
                                             echo '<ul id="navigation">';
                                             echo '<li class="active"><a href="' . home_url('/') . '">Home</a></li>';
-                                            echo '<li><a href="#">About</a></li>';
-                                            echo '<li><a href="#">Services</a></li>';
-                                            echo '<li><a href="#">Portfolio</a></li>';
-                                            echo '<li><a href="#">Blog</a>';
+                                            echo '<li><a href="' . home_url('/about') . '">About</a></li>';
+                                            echo '<li><a href="' . home_url('/services') . '">Services</a></li>';
+                                            echo '<li><a href="' . home_url('/portfolio') . '">Portfolio</a></li>';
+                                            echo '<li><a href="' . home_url('/blog') . '">Blog</a>';
                                             echo '<ul class="submenu">';
-                                            echo '<li><a href="#">Blog</a></li>';
+                                            echo '<li><a href="' . home_url('/blog') . '">Blog</a></li>';
                                             echo '<li><a href="#">Blog Details</a></li>';
                                             echo '<li><a href="#">Element</a></li>';
                                             echo '</ul>';
                                             echo '</li>';
-                                            echo '<li><a href="#">Contact</a></li>';
+                                            echo '<li><a href="' . home_url('/contact') . '">Contact</a></li>';
                                             echo '</ul>';
                                         }
                                         ?>
                                     </nav>
                                 </div>
                                 <div class="header-right-btn f-right d-none d-lg-block ml-30">
-                                    <a href="#" class="btn header-btn">RESERVE YOUR HAIRCUT</a>
+                                    <a href="http://localhost/Proyecto-Intermodular/laravel_booking/public/" class="btn header-btn">RESERVE YOUR HAIRCUT</a>
                                 </div>
                             </div>
                         </div>   

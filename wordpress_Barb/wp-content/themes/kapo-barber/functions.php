@@ -36,3 +36,28 @@ function kapo_barber_setup() {
     add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'kapo_barber_setup' );
+
+function kapo_custom_post_type_portrait() {
+    $labels = array(
+        'name'                  => _x( 'Portraits', 'Post Type General Name', 'kapo-barber' ),
+        'singular_name'         => _x( 'Portrait', 'Post Type Singular Name', 'kapo-barber' ),
+        'menu_name'             => __( 'Portraits', 'kapo-barber' ),
+        'name_admin_bar'        => __( 'Portrait', 'kapo-barber' ),
+        'add_new'               => __( 'Add New', 'kapo-barber' ),
+        'add_new_item'          => __( 'Add New Portrait', 'kapo-barber' ),
+    );
+    $args = array(
+        'label'                 => __( 'Portrait', 'kapo-barber' ),
+        'description'           => __( 'Custom Post Type for Portraits', 'kapo-barber' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'menu_icon'             => 'dashicons-format-image',
+        'has_archive'           => true,
+    );
+    register_post_type( 'portrait', $args );
+}
+add_action( 'init', 'kapo_custom_post_type_portrait', 0 );
